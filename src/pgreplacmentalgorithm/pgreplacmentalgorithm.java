@@ -13,7 +13,6 @@ public class pgreplacmentalgorithm  {
     CallingVariables f =new CallingVariables();
     Scanner sc=new Scanner (System.in);
     int choice;
-      //page replacement fifo algo
     System.out.println("->PAGE REPLACMENT FIFO ALGORITHM.");
             
             do{
@@ -38,7 +37,7 @@ public class pgreplacmentalgorithm  {
 }
 }        
 
-
+//main
 
 
 
