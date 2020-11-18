@@ -9,6 +9,8 @@ import java.util.Scanner;
 
 public class pgreplacmentalgorithm  {
 
+    //page replacement fifo algo
+    
     public static void main(String[] args) {
     CallingVariables f =new CallingVariables();
     Scanner sc=new Scanner (System.in);
@@ -37,7 +39,7 @@ public class pgreplacmentalgorithm  {
 }
 }        
 
-//main
+
 
 
 
