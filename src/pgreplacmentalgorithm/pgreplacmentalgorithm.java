@@ -17,6 +17,7 @@ public class pgreplacmentalgorithm  {
     public static void main(String[] args) throws NoSuchElementException, ClassNotFoundException, IOException {
     CallingVariables f =new CallingVariables();
     OptimalCallingVariables o=new OptimalCallingVariables();
+    LRUcallingvariables l=new LRUcallingvariables();
     Scanner sc=new Scanner (System.in);
     
     int choice;
@@ -25,7 +26,8 @@ public class pgreplacmentalgorithm  {
             do{
         System.out.println("Press 1->For FIFO Algorithm");
         System.out.println("Press 2->For Optimal Algorithm");
-        System.out.println("Press 3-> for existing");
+        System.out.println("Press 3->For LRU Algorithm");
+        System.out.println("Press 4-> for existing");
            choice=sc.nextInt();
         
            
@@ -44,15 +46,22 @@ public class pgreplacmentalgorithm  {
              int ch=sc.nextInt();
              o.Optimal(ch);
            }
+                        else if(choice==3)
+                        {
+                        System.out.println("Press 1->For user input");
+            System.out.println("Press 2->For file input");
+             int ch=sc.nextInt();
+             l.LRU(ch);
+                        }
             
-          else if (choice==3)
+          else if (choice==4)
             {  
                 System.out.println("Thank You");
                 break;
             }
           else 
               System.out.println("please enter correct choice");
-       }while(choice!=3);
+       }while(choice!=4);
     
        //JFrame ff = new JFrame();
       // ff.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
